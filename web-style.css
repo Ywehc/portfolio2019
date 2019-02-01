@@ -1,0 +1,323 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #0f52ba;
+}
+main {
+    width: 64%;
+    background: #0f52ba;
+    color: white;
+}
+h1 {
+    font-family: 'Libre Barcode 128 Text', cursive;
+    font-size: 30px;
+    margin: 0 auto;
+    background: #0f52ba;
+    color: white;
+    padding: .2em;
+    font-weight: lighter;
+}
+h2 {
+    font-size: 22px;
+}
+.tech {
+    color: #0bda51;
+}
+
+#skills ul {
+    list-style-type: none;
+    font-size: 20px;
+    padding: .4em;
+    margin: 5.3em .3em;
+}
+#skills li {
+    margin: .5em;
+}
+#skills i {
+    margin-right: 10px;
+    color: #0bda51;
+}
+.wrapper {
+    display: flex;
+    font-family: 'Quicksand', sans-serif; 
+}
+.site-nav {
+    list-style-type: none;
+    color: #0f52ba;   
+    width: 35%;
+    height: 100vh;
+}
+.site-nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 3em 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+.site-nav i {
+    color: #0bda51;
+    font-size: 18px;
+}
+.site-nav li {
+    padding: .2em;
+}
+.site-nav li:hover{
+    color: #0bda51;
+}
+.nav-links {
+    border: 2px solid white;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background: white;
+}
+#portfolio {
+    padding: .4em;
+    margin: 8.5em .3em;
+}
+#portfolio ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 20px;
+}
+#business {
+    margin: 12.6em .3em;
+}
+#business h2 {
+    padding: 0 .4em;
+}
+#business ul {
+    list-style-type: none;
+    font-size: 18px;
+    padding: .4em;
+    margin: 0;
+}
+#business li {
+    margin: .4em;
+}
+#business i {
+    color: #0bda51;
+}
+#pricing {
+    margin: 13.8em .3em;
+    padding: .4em;
+}
+#pricing-graph {
+    max-width: 900px;
+}
+#pricing-grid {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    background: transparent;
+    text-align: center;
+    overflow: hidden;
+}
+#pricing-grid p {
+    margin: 0;
+    font-size: 15px;
+}
+.tablinks:active{
+    background: #0f52ba;
+}
+.icons-social i {
+    margin: .2em;
+}
+.footer-mobile {
+    color: #0f52ba; 
+    text-align: center;
+    padding: .4em;
+    font-size: 12px;
+    margin-top: 20em;
+} 
+.footer-mobile p {
+    margin: .2em;
+}
+.sitemap-draw {
+    display: flex;
+}
+.border-right {
+    border-right: 3px solid white;
+}
+.border-left {
+    border-left: 3px solid white;
+}
+.border-right, .border-left {
+    height: 20px;
+    width: 50%;
+}
+#privacy {
+    text-align: left;
+    color: white;
+    padding: .5em;
+    font-size: 7px;
+}
+.row-blogs, .row-landing-pages, .row-basic-wp, .row-hosting, #from-499 {
+    width: 50%;
+    background: #0bda51;
+}
+.row-stores, .row-custom-web, .row-advanced-wp {
+    width: 75%;
+    background: #00a86b;
+}
+.row-large-stores, .row-advanced-web {
+    width: 100%;
+    background: #53c97c;
+}
+.price-bar {
+    display: flex;
+    text-align: center;
+    margin-top: 10px;
+}
+#from-999 {
+    width: 25%;
+    background: #00a86b;
+}
+#from-1999 {
+    width: 25%;
+    background: #53c97c;
+}
+.grid-row {
+    padding: .1em;
+}
+#contact {
+    padding: .4em;
+    text-align: center;
+    margin: 16.2em 0 0 0;
+}
+#name {
+    background: #0bda51;
+    padding: .5em;
+}
+#email {
+    background: #00a86b;
+    padding: .5em;
+}
+#phone {
+    background: #53c97c;
+    padding: .5em;
+}
+input {
+    font-size: 18px;
+    margin-bottom: .4em;
+}
+input::placeholder {
+  color: #0f52ba;
+}
+.form-input {
+    width: 80%;
+}
+#message {
+    height: 15em;
+    border-radius: 5px;
+    padding: .5em;
+}
+.button-submit {
+    background: #0bda51;
+    color: #0f52ba;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 2px solid white;
+}
+#sitemap {
+        display: none;
+}
+.email-url {
+    display: none;
+}
+@media(min-width: 576px) {
+    h1 {
+        font-size: 38px;
+        height: 50px;
+    }
+    .site-nav {
+        width:30%;
+    }
+    main {
+        width: 70%;
+    }
+    #skills ul {
+        margin: 6.3em 3em 0 3em;
+    }
+    #portfolio {
+        margin: 9.8em 3em 0 3em;
+    }
+    #business {
+        margin: 14.1em 3em 0 3em;
+    }   
+    #pricing {
+        margin: 15em 3em 0 3em;
+    }
+    #contact {
+        text-align: left;
+        margin: 17.5em 3em 0 3em;
+    }
+    #message {
+        height: 10em;
+    }
+}
+@media(min-width: 768px) {
+    .site-nav {
+        width:25%;
+    }
+    main {
+        width: 75%;
+    }
+    #portfolio {
+    margin: 9.8em 5em 0 5em;
+    }
+    #business {
+    margin: 14.3em 5em 0 5em;
+    } 
+    #pricing {
+    margin: 15.1em 5em 0 5em;
+    }
+    #contact {
+        margin: 17.7em 5em 0 5em;
+    }
+}
+@media(min-width: 992px) {
+    h1 {
+        font-size: 44px;
+        height: 70px;
+    }
+    .site-nav {
+        width:20%;
+    }
+    main {
+        width: 80%;
+    }
+    #skills ul {
+    margin: 7.4em 5em 0 5em;
+    }
+    #portfolio {
+    margin: 11.2em 5em 0 5em;
+    }
+    #business {
+    margin: 15.5em 5em 0 5em;
+    }  
+    #pricing {
+    margin: 16.7em 5em 0 5em;
+    }
+    #contact {
+        margin: 19.1em 7em 0 7em;
+        max-width: 1200px;
+    }
+    #message {
+        height: 5em;
+    }
+    .grid-row, .price-bar div {
+        padding: .2em;
+        font-weight: bold;
+    }
+    .footer-mobile {
+        margin-top: 19em;
+        font-weight: bold;
+    }
+    .email-url {
+        display: block;
+    }
+}
+
+/* 
+    color: #0f52ba;
+    color: #0bda51; */

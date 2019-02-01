@@ -1,0 +1,63 @@
+body {
+    margin: auto;
+    text-align: center;
+}
+h1 {
+    font-family: 'Libre Barcode 128 Text', cursive;
+    color: #0f52ba;
+    font-size: 60px;
+    margin-top: 25vh;
+    font-weight: lighter;
+}
+h1:hover{
+    color: #0bda51;
+}
+nav ul{
+    list-style-type: none;
+    padding: 0;   
+}
+nav ul a {
+    color: #0bda51;
+    font-family: 'Quicksand', sans-serif; 
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+nav li {
+    margin: .5em;
+}
+nav li:hover{
+    color: #0f52ba;
+}
+.fa-window-minimize{
+    font-size: 35px;
+    color: #0f52ba;
+}
+.fa-window-minimize:hover{
+    color: #0bda51;
+}
+footer {
+   margin-top: 28em;
+   font-family: 'Quicksand', sans-serif;
+   color: #0f52ba; 
+}
+#siteMap {
+    display: flex;
+}
+.border-right, .border-left {
+    width: 50%;
+}
+.border-right p, .border-left p {
+    font-size: 14px;
+}
+.border-right {
+    border-right: 2px solid #0f52ba;
+}
+.border-left {
+    border-left: 2px solid #0f52ba;
+}
+#privacy {
+    padding: .5em;
+    font-size: 15px;
+}
+
