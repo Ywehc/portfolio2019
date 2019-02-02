@@ -64,6 +64,9 @@ h2 {
 .site-nav li:hover{
     color: #0bda51;
 }
+.site-nav a {
+    text-decoration: none;
+}
 .nav-links {
     border: 2px solid white;
     border-top-right-radius: 25px;
@@ -100,10 +103,9 @@ h2 {
 #pricing {
     margin: 13.8em .3em;
     padding: .4em;
-}
-#pricing-graph {
     max-width: 900px;
 }
+
 #pricing-grid {
     display: flex;
     flex-direction: column;
@@ -124,7 +126,6 @@ h2 {
 }
 .footer-mobile {
     color: #0f52ba; 
-    text-align: center;
     padding: .4em;
     font-size: 12px;
     margin-top: 20em;
@@ -224,6 +225,18 @@ input::placeholder {
 .email-url {
     display: none;
 }
+#graphics {
+    margin: 10em auto;
+    text-align: center;
+}
+#gears {
+    -webkit-filter: drop-shadow(0px 0px 2px black);
+    -moz-filter: drop-shadow(0px 0px 2px black);
+    max-width: 150px;
+}
+.email-link p{
+    display: none;
+}
 @media(min-width: 576px) {
     h1 {
         font-size: 38px;
@@ -254,8 +267,14 @@ input::placeholder {
     #message {
         height: 10em;
     }
+    #gears {
+        max-width: 250px;
+    }
 }
 @media(min-width: 768px) {
+    h1 {
+        padding-top: .5em;
+    }
     .site-nav {
         width:25%;
     }
@@ -276,15 +295,11 @@ input::placeholder {
     }
 }
 @media(min-width: 992px) {
-    h1 {
-        font-size: 44px;
-        height: 70px;
-    }
     .site-nav {
-        width:20%;
+        width:24%;
     }
     main {
-        width: 80%;
+        width: 76%;
     }
     #skills ul {
     margin: 7.4em 5em 0 5em;
@@ -313,8 +328,8 @@ input::placeholder {
         margin-top: 19em;
         font-weight: bold;
     }
-    .email-url {
-        display: block;
+    .email-link p{
+    display: block;
     }
 }
 

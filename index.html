@@ -10,46 +10,27 @@
         <link href="https://fonts.googleapis.com/css?family=Libre+Barcode+128+Text" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
             crossorigin="anonymous">
-
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129656998-1"></script>
         <script>
-            function toggleNav() {
-                var x = document.getElementById("nav");
-                if (x.style.display === "none") {
-                    x.style.display = "block";
-                } else {
-                    x.style.display = "none";
-                }
-            }
-            function toggleSiteMap() {
-                var x = document.getElementById("siteMap");
-                if (x.style.display === "none") {
-                    x.style.display = "flex";
-                } else {
-                    x.style.display = "none";
-                }
-            }
-            function togglePrivacyPolicy() {
-                    var x = document.getElementById("privacy");
-                    if (x.style.display === "none") {
-                        x.style.display = "block";
-                    } else {
-                        x.style.display = "none";
-                    }
-                }
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-129656998-1');
         </script>
+        <script src="logic.js"></script>
     </head>
     <body>
-        <header>
-            <h1 onclick="toggleNav()">chris kieran</h1>
-        </header>
-        <nav style="display: none" id="nav">
-            <ul>
-                <a href="chriskieran.com/web"><li>web development</li></a>
-                <a href="https://photos.app.goo.gl/sp2ADovE8aRTAYSW8"><li>chewy</li></a>
-                <a href="chriskieran.com/web.html"><li>contact</li></a>
-                <li><i class="fas fa-window-minimize" onclick="toggleNav()"></i></li>
-            </ul>
-        </nav>
+        <div class="header-container">
+            <header>
+                <a href="www.chriskieran.com/web.html">
+                    <h1>chris kieran</h1>
+                </a>
+            </header>
+        </div>
+        <h2>modern web development</h2>
         <footer>
             <p onclick="toggleSiteMap()">Sitemap</p>
             <div id="siteMap" style="display: none">

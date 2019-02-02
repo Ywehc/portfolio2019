@@ -10,11 +10,23 @@
         <link href="https://fonts.googleapis.com/css?family=Libre+Barcode+128+Text" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
             crossorigin="anonymous">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129656998-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-129656998-1');
+        </script>
+        <script src="logic.js"></script>
+        
     </head>
     <body>
         <div class="wrapper">
             <nav class="site-nav">
-                <h1>chris kieran</h1>
+                <a href="www.chriskieran.com/web.html"><h1>chris kieran</h1></a>
                 <div class="nav-links">
                     <ul>
                         <li class="tablinks" onclick="openTab(event, 'skills')">skills</li>
@@ -23,16 +35,16 @@
                         <li class="tablinks" onclick="openTab(event, 'pricing')">pricing</li>
                         <li class="tablinks" onclick="openTab(event, 'contact')">contact</li>
                         <li class="icons-social">
-                            <i class="fab fa-linkedin-in"></i>
-                            <i class="fab fa-github"></i>
-                            <i class="fas fa-comment-alt"></i>
-                            <i class="fas fa-envelope-square"></i>
+                            <a href="https://www.linkedin.com/in/chris-kieran/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://github.com/Ywehc?tab=repositories" target="_blank"><i class="fab fa-github"></i></a>
+                            <i class="fas fa-comment-alt" onclick="openTab(event, 'contact')"></i>
+                            <a class="email-link" href="mailto:chriskierandevelopment@gmail.com"><i class="fas fa-envelope-square"></i></a>
                         </li>
                     </ul>
                     <div class="footer-mobile">
-                        <p class="email-url">chriskierandevelopment@gmail.com</p>
-                        <p class="tablinks" onclick="openTab(event, 'sitemap')">Sitemap</p>
-                        <p class="tablinks" onclick="openTab(event, 'privacy')">Privacy Policy</p>
+                        <a class="email-link" href="mailto:chriskierandevelopment@gmail.com"><p>chriskierandevelopment@gmail.com</p></a>
+                        <a href="www.chriskieran.com/#sitemap"><p>Sitemap</p></a>
+                        <a href="www.chriskieran.com/#privacy"><p>Privacy Policy</p></a>
                         <p class="copyright">&copy;2019 Chris Kieran</p>
                     </div>
                 </div>
@@ -40,13 +52,17 @@
                 
             </nav>
             <main>
+                <section id="graphics" class="tabcontent">
+                    <canvas id="gears">
+                    </canvas>
+                </section>
                 <section id="skills" class="tabcontent" style="display: none">
                     <ul>
                         <li><i class="fas fa-server"></i>Website hosting, administration and domain services including AWS</li>
                         <li><i class="fas fa-map"></i>Site planning and content/keyword strategy</li>
                         <li><i class="fas fa-mobile-alt"></i>Responsive page designs that look great viewed on any device</li>
                         <li><i class="fas fa-code"></i>Clean, modern, readable HTML/CSS/JS</li>
-                        <li><i class="fab fa-react"></i>MERN Stack Web App Development</li>
+                        <li><i class="fab fa-react"></i>MERN stack web app development</li>
                         <li><i class="fab fa-wordpress"></i>WordPress, Shopify, other CMS</li>
                         <li><i class="fas fa-chart-pie"></i>Salesforce administration and app development</li>
                         <li><i class="fab fa-adobe"></i>Photoshop</li>
@@ -96,8 +112,7 @@
                         <li><i class="far fa-check-square"></i>
                             Deploy modern e-commerce storefronts that convert, using technologies like Shopify and WooCommerce.</li>
                         <li><i class="far fa-check-square"></i>
-                            Master search engine optimization and site analytics to help drive visitors to your site and fulfill your business
-                            objectives.</li>
+                            Master search engine optimization and site analytics to help drive visitors to your site and fulfill your objectives.</li>
                         <li><i class="far fa-check-square"></i>
                             Fix bugs or make improvements on your existing websites.</li>
                     </ul>
@@ -177,21 +192,5 @@
                 </section>
             </main>
         </div>
-
-        <script>
-            function openTab(evt, tabName) {
-                var i, tabcontent, tablinks;
-                tabcontent = document.getElementsByClassName("tabcontent");
-                for (i = 0; i < tabcontent.length; i++) {
-                    tabcontent[i].style.display = "none";
-                }
-                tablinks = document.getElementsByClassName("tablinks");
-                for (i = 0; i < tablinks.length; i++) {
-                    tablinks[i].className = tablinks[i].className.replace(" active", "");
-                }
-                document.getElementById(tabName).style.display = "block";
-                evt.currentTarget.className += " active";
-            }
-        </script>
     </body>
 </html>
