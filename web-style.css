@@ -4,95 +4,147 @@ html, body {
     background: #0f52ba;
 }
 main {
-    width: 64%;
     background: #0f52ba;
     color: white;
+    margin: 0 auto;
 }
 h1 {
     font-family: 'Libre Barcode 128 Text', cursive;
-    font-size: 30px;
-    margin: 0 auto;
     background: #0f52ba;
     color: white;
-    padding: .2em;
     font-weight: lighter;
+    height: 50px;
+    font-size: 35px;
 }
 h2 {
-    font-size: 22px;
+    font-size: 18px;
+    margin: 0;
 }
-.tech {
-    color: #0bda51;
-}
-
-#skills ul {
+ul {
     list-style-type: none;
-    font-size: 20px;
-    padding: .4em;
-    margin: 5.3em .3em;
-}
-#skills li {
-    margin: .5em;
-}
-#skills i {
-    margin-right: 10px;
-    color: #0bda51;
 }
 .wrapper {
     display: flex;
     font-family: 'Quicksand', sans-serif; 
 }
-.site-nav {
-    list-style-type: none;
-    color: #0f52ba;   
-    width: 35%;
-    height: 100vh;
+.flex-container {
+    display: flex;
+    flex-direction: column;
 }
-.site-nav ul{
-    list-style-type: none;
+.logo-container {
+    padding: 5px;
+}
+/* Site Nav */
+nav {
+    color: #0f52ba;   
+}
+nav ul{
     padding: 0;
-    margin: 3em 0;
     font-size: 24px;
     font-weight: bold;
+    min-width: 150px;
 }
-.site-nav i {
+nav i {
     color: #0bda51;
     font-size: 18px;
 }
-.site-nav li {
-    padding: .2em;
+nav i:hover {
+    color: #0f52ba;
 }
-.site-nav li:hover{
+nav li {
+    padding: 5px;
+}
+nav li:hover{
     color: #0bda51;
 }
-.site-nav a {
+nav a {
     text-decoration: none;
 }
 .nav-links {
-    border: 2px solid white;
+    border: 2px solid #0f52ba;
+    border-left: none;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
     background: white;
 }
-#portfolio {
+.tablinks:active{
+    background: #0f52ba;
+}
+.icons-social i {
+    margin: .1em;
+}
+footer {
+    color: #0f52ba; 
     padding: .4em;
-    margin: 8.5em .3em;
+    font-size: 12px;
+} 
+footer p {
+    margin: .2em;
+}
+footer p:hover {
+    color: #0bda51;
+}
+footer a {
+    color: #0f52ba;
+}
+footer a:hover {
+    color: #0bda51;
+}
+.copyright:hover {
+    color: #0f52ba;
+}
+/* Content */
+#default, #skills, #portfolio, #business, #pricing, #contact {
+    padding: 1em;
+    margin: auto;
+}
+#default {
+    margin-top: 10em;
+}
+#graphics {
+    margin: auto;
+    text-align: center;
+}
+#gears {
+    -webkit-filter: drop-shadow(0px 0px 2px black);
+    -moz-filter: drop-shadow(0px 0px 2px black);
+    max-width: 128px;
+}
+#skills {
+    margin-top: 7.8em;
+}
+.tech {
+    color: #0bda51;
+}
+#skills ul {
+    padding: 0;
+}
+#skills i {
+    margin-right: 10px;
+    color: #0bda51;
+}
+#skills li {
+    margin: .4em;
+}
+#portfolio {
+    margin-top: 11em;
+}
+#portfolio a {
+    text-decoration: none;
+    color: white;
+}
+#portfolio a:hover {
+    color: #0bda51
 }
 #portfolio ul {
-    list-style-type: none;
     padding: 0;
-    font-size: 20px;
 }
 #business {
-    margin: 12.6em .3em;
-}
-#business h2 {
-    padding: 0 .4em;
+    margin-top: 13.8em;
 }
 #business ul {
-    list-style-type: none;
-    font-size: 18px;
-    padding: .4em;
     margin: 0;
+    padding: 0;
 }
 #business li {
     margin: .4em;
@@ -101,56 +153,20 @@ h2 {
     color: #0bda51;
 }
 #pricing {
-    margin: 13.8em .3em;
-    padding: .4em;
     max-width: 900px;
+    margin-top: 16.6em;
 }
-
 #pricing-grid {
     display: flex;
     flex-direction: column;
-    font-size: 14px;
+    font-size: 12px;
     background: transparent;
     text-align: center;
     overflow: hidden;
 }
 #pricing-grid p {
     margin: 0;
-    font-size: 15px;
-}
-.tablinks:active{
-    background: #0f52ba;
-}
-.icons-social i {
-    margin: .2em;
-}
-.footer-mobile {
-    color: #0f52ba; 
-    padding: .4em;
     font-size: 12px;
-    margin-top: 20em;
-} 
-.footer-mobile p {
-    margin: .2em;
-}
-.sitemap-draw {
-    display: flex;
-}
-.border-right {
-    border-right: 3px solid white;
-}
-.border-left {
-    border-left: 3px solid white;
-}
-.border-right, .border-left {
-    height: 20px;
-    width: 50%;
-}
-#privacy {
-    text-align: left;
-    color: white;
-    padding: .5em;
-    font-size: 7px;
 }
 .row-blogs, .row-landing-pages, .row-basic-wp, .row-hosting, #from-499 {
     width: 50%;
@@ -168,6 +184,7 @@ h2 {
     display: flex;
     text-align: center;
     margin-top: 10px;
+    font-size: 12px;
 }
 #from-999 {
     width: 25%;
@@ -181,13 +198,13 @@ h2 {
     padding: .1em;
 }
 #contact {
-    padding: .4em;
     text-align: center;
-    margin: 16.2em 0 0 0;
+    margin-top: 18.7em;
 }
 #name {
     background: #0bda51;
     padding: .5em;
+    margin-top: 1em;
 }
 #email {
     background: #00a86b;
@@ -219,103 +236,131 @@ input::placeholder {
     border-radius: 5px;
     border: 2px solid white;
 }
-#sitemap {
-        display: none;
-}
 .email-url {
     display: none;
-}
-#graphics {
-    margin: 10em auto;
-    text-align: center;
-}
-#gears {
-    -webkit-filter: drop-shadow(0px 0px 2px black);
-    -moz-filter: drop-shadow(0px 0px 2px black);
-    max-width: 150px;
 }
 .email-link p{
     display: none;
 }
+#siteMap {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: auto;
+}
+#siteMap a {
+    text-decoration: none;
+}
+.sitemap-level1 p {
+    margin: .3em;
+    text-align: center;
+}
+.sitemap-level2 {
+    display: flex;
+    font-size: 12px;
+}
+.border-right, .border-left {
+    width: 50%;
+    border-top: 2px solid #0f52ba;
+}
+.border-right p, .border-left p {
+    margin: .3em;
+}
+.border-right {
+    border-right: 1px solid #0f52ba;
+    text-align: right;
+}
+.border-left {
+    border-left: 1px solid #0f52ba;
+    text-align: left;
+}
 @media(min-width: 576px) {
-    h1 {
-        font-size: 38px;
-        height: 50px;
+    /*Content*/
+    #default {
+        text-align: center;
+        font-size: 22px;
+        margin-top: 6em;
     }
-    .site-nav {
-        width:30%;
-    }
-    main {
-        width: 70%;
-    }
-    #skills ul {
-        margin: 6.3em 3em 0 3em;
-    }
-    #portfolio {
-        margin: 9.8em 3em 0 3em;
+    #gears {
+        max-width: 180px;
     }
     #business {
-        margin: 14.1em 3em 0 3em;
-    }   
+        margin-top: 14.1em;
+    } 
+    #portfolio {
+        margin-top: 11.5em;
+    }  
     #pricing {
-        margin: 15em 3em 0 3em;
+        margin-top: 16.6em;
     }
     #contact {
         text-align: left;
-        margin: 17.5em 3em 0 3em;
+        margin-top: 19em auto 0;
+        width: 350px;
     }
     #message {
         height: 10em;
-    }
-    #gears {
-        max-width: 250px;
-    }
+    }   
 }
 @media(min-width: 768px) {
-    h1 {
-        padding-top: .5em;
+    /*Content*/
+    .flex-container {
+        flex-direction: row;
     }
-    .site-nav {
-        width:25%;
+    #web-app, #commercial {
+        margin: auto 4em;
     }
-    main {
-        width: 75%;
+    #default, #portfolio, #business, #pricing, #contact {
+        padding: 3em;
+    }
+    #default {
+        font-size: 24px;
+        margin-top: 4em;
     }
     #portfolio {
-    margin: 9.8em 5em 0 5em;
+        margin-top: 9.2em;
     }
     #business {
-    margin: 14.3em 5em 0 5em;
-    } 
+        margin-top: 12em;
+    }
     #pricing {
-    margin: 15.1em 5em 0 5em;
+        margin-top: 14.8em;
     }
     #contact {
-        margin: 17.7em 5em 0 5em;
+        margin-top: 17.2em;
+        width: 500px;
     }
 }
 @media(min-width: 992px) {
-    .site-nav {
-        width:24%;
+    /*Page*/
+    h1 {
+        font-size: 54px;
     }
-    main {
-        width: 76%;
+    h2 {
+        font-size: 22px;
     }
-    #skills ul {
-    margin: 7.4em 5em 0 5em;
+    /*Content*/
+    #skills, #portfolio, #business, #pricing {
+        font-size: 20px;
+    }
+    #skills {
+        margin-top: 7.4em;
+    }
+    #gears {
+        max-width: 240px;
     }
     #portfolio {
-    margin: 11.2em 5em 0 5em;
+        margin-top:8.2em;
     }
     #business {
-    margin: 15.5em 5em 0 5em;
-    }  
+        margin-top: 10.3em;
+    }
     #pricing {
-    margin: 16.7em 5em 0 5em;
+        margin-top: 12.5em;
     }
     #contact {
-        margin: 19.1em 7em 0 7em;
-        max-width: 1200px;
+        margin-top: 19em;
+        width: 800px;
     }
     #message {
         height: 5em;
@@ -324,15 +369,13 @@ input::placeholder {
         padding: .2em;
         font-weight: bold;
     }
-    .footer-mobile {
-        margin-top: 19em;
+    footer {
+        margin-top: 5em;
         font-weight: bold;
     }
     .email-link p{
-    display: block;
+        display: block;
     }
 }
 
-/* 
-    color: #0f52ba;
-    color: #0bda51; */
+

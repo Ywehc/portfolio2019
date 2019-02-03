@@ -30,14 +30,14 @@ function toggleSiteMap() {
     }
 }
 
-function togglePrivacyPolicy() {
-    var x = document.getElementById("privacy");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
+// function togglePrivacyPolicy() {
+//     var x = document.getElementById("privacy");
+//     if (x.style.display === "none") {
+//         x.style.display = "block";
+//     } else {
+//         x.style.display = "none";
+//     }
+// }
 
 // function displayContact() {
 //     const url = window.location.href;

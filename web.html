@@ -3,7 +3,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Chris Kieran</title>
-        <meta name="description" content="">
+        <meta name="description" content="I'm passionate about web development and can help you execute on your great website or store idea.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="web-style.css">
         <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700" rel="stylesheet">
@@ -25,8 +25,12 @@
     </head>
     <body>
         <div class="wrapper">
-            <nav class="site-nav">
-                <a href="www.chriskieran.com/web.html"><h1>chris kieran</h1></a>
+            <nav>
+                <div class="logo-container">
+                    <a href="web.html">
+                        <h1>chris kieran</h1>
+                    </a>
+                </div>               
                 <div class="nav-links">
                     <ul>
                         <li class="tablinks" onclick="openTab(event, 'skills')">skills</li>
@@ -41,25 +45,46 @@
                             <a class="email-link" href="mailto:chriskierandevelopment@gmail.com"><i class="fas fa-envelope-square"></i></a>
                         </li>
                     </ul>
-                    <div class="footer-mobile">
+                    <footer>
                         <a class="email-link" href="mailto:chriskierandevelopment@gmail.com"><p>chriskierandevelopment@gmail.com</p></a>
-                        <a href="www.chriskieran.com/#sitemap"><p>Sitemap</p></a>
-                        <a href="www.chriskieran.com/#privacy"><p>Privacy Policy</p></a>
+                        <p onclick="toggleSiteMap()">Sitemap</p>
+                        <div id="siteMap" style="display: none">
+                            <div class="sitemap-level1">
+                                <a href="index.html">
+                                    <p>chriskieran.com</p>
+                                </a>
+                            </div>
+                            <div class="sitemap-level2">
+                                <div class="border-right">
+                                    <a href="web.html">
+                                        <p>web</p>
+                                    </a>
+                                </div>
+                                <div class="border-left">
+                                    <a href="privacy.html">
+                                        <p>privacy</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="privacy.html"><p>Privacy Policy</p></a>
                         <p class="copyright">&copy;2019 Chris Kieran</p>
-                    </div>
+                    </footer>
                 </div>
-                
-                
+                            
             </nav>
             <main>
-                <section id="graphics" class="tabcontent">
-                    <canvas id="gears">
-                    </canvas>
+                <section id="default" class="tabcontent">
+                    <p>Compelling, dynamic, responsive software development for the web.</p>
+                    <div id="graphics" class="tabcontent">
+                        <canvas id="gears">
+                        </canvas>
+                    </div>
                 </section>
                 <section id="skills" class="tabcontent" style="display: none">
                     <ul>
                         <li><i class="fas fa-server"></i>Website hosting, administration and domain services including AWS</li>
-                        <li><i class="fas fa-map"></i>Site planning and content/keyword strategy</li>
+                        <li><i class="fas fa-map"></i>Site planning and content/SEO strategy</li>
                         <li><i class="fas fa-mobile-alt"></i>Responsive page designs that look great viewed on any device</li>
                         <li><i class="fas fa-code"></i>Clean, modern, readable HTML/CSS/JS</li>
                         <li><i class="fab fa-react"></i>MERN stack web app development</li>
@@ -69,37 +94,38 @@
                     </ul>
                 </section>
                 <section id="portfolio" class="tabcontent" style="display: none">
-                    <div id="web-apps">
-                        <h2>Web Applications</h2>
-                        <span class="tech">
-                            <i class="fab fa-html5"></i>
-                            <i class="fab fa-css3"></i>
-                            <i class="fab fa-js"></i>
-                            <i class="fab fa-react"></i>
-                            <i class="fab fa-node-js"></i>
-                        </span>
-                        <ul>
-                            <li>Hockey Quotes</li>
-                            <li>To Do's</li>
-                            <li>Campsite Review</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h2>Commercial Sites</h2>
-                        <span class="tech">
-                            <i class="fab fa-html5"></i>
-                            <i class="fab fa-css3"></i>
-                            <i class="fab fa-js"></i>
-                            <i class="fab fa-wordpress"></i>
-                        </span>
-                        <ul>
-                            <li>Instantia Labs</li>
-                            <li>Arina Clinic</li>
-                            <li>Koolen Electric</li>
-                            <li>Control Your Property</li>
-                            <li>2018 Portfolio</li>
-                        </ul>
-                        </ul>
+                    <div class="flex-container">
+                        <div id="web-apps">
+                            <h2>Web Applications</h2>
+                            <span class="tech">
+                                <i class="fab fa-html5"></i>
+                                <i class="fab fa-css3"></i>
+                                <i class="fab fa-js"></i>
+                                <i class="fab fa-react"></i>
+                                <i class="fab fa-node-js"></i>
+                            </span>
+                            <ul>
+                                <a href="https://codepen.io/Ywehc/full/BMQEQW" target="_blank"><li>Hockey Quotes</li></a>
+                                <a href="https://codepen.io/Ywehc/full/zMjrXv/" target="_blank"><li>To Do's</li></a>
+                                <a href="https://limitless-journey-87149.herokuapp.com/" target="_blank"><li>Campsite Review</li></a>
+                            </ul>
+                        </div>
+                        <div id="commercial">
+                            <h2>Commercial Sites</h2>
+                            <span class="tech">
+                                <i class="fab fa-html5"></i>
+                                <i class="fab fa-css3"></i>
+                                <i class="fab fa-js"></i>
+                                <i class="fab fa-wordpress"></i>
+                            </span>
+                            <ul>
+                                <a href="https://instantialabs.com/" target="_blank"><li>Instantia Labs</li></a>
+                                <a href="https://choptricks.cloudaccess.host" target="_blank"><li>Arina Clinic</li></a>
+                                <a href="http://www.koolenelectric.ca/" target="_blank"><li>Koolen Electric</li></a>
+                                <a href="http://www.controlyourproperty.com" target="_blank"><li>Control Your Property</li></a>
+                            </ul>
+                            </ul>
+                        </div>
                     </div>
                 </section>
                 <section id="business" class="tabcontent" style="display: none">
@@ -110,7 +136,7 @@
                         <li><i class="far fa-check-square"></i>
                             Expertly develop brand, event, product or service websites that are sharp, responsive and accessible.</li>
                         <li><i class="far fa-check-square"></i>
-                            Deploy modern e-commerce storefronts that convert, using technologies like Shopify and WooCommerce.</li>
+                            Deploy modern e-commerce storefronts that attract and convert customers.</li>
                         <li><i class="far fa-check-square"></i>
                             Master search engine optimization and site analytics to help drive visitors to your site and fulfill your objectives.</li>
                         <li><i class="far fa-check-square"></i>
@@ -167,7 +193,7 @@
                     </div>
                 </section>
                 <section id="contact" class="tabcontent" style="display: none">
-                    <h2>How can I help you?</h2>
+                    <h2>Hi, how can I help you?</h2>
                     <form class="contact-form" action="https://formspree.io/chriskierandevelopment@gmail.com" target="_blank" method="POST">
                         <div>
                             <label for="name"></label>

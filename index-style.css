@@ -18,7 +18,14 @@ h2 {
     margin-top: 5em;
     font-family: 'Quicksand', sans-serif; 
     font-size: 20px;
-    font-weight: bold;
+    font-weight: lighter;
+}
+h2 a {
+    text-decoration: none;
+    color: #0f52ba;
+}
+h2 a:hover {
+    color: #0bda51;
 }
 nav ul{
     list-style-type: none;
@@ -37,9 +44,10 @@ nav li {
 nav li:hover{
     color: #0f52ba;
 }
-header a {
+.header-container a {
     text-decoration: none;
 }
+
 .fa-window-minimize{
     font-size: 35px;
     color: #0f52ba;
@@ -48,28 +56,56 @@ header a {
     color: #0bda51;
 }
 footer {
-   margin-top: 18em;
+   margin-top: 14em;
    font-family: 'Quicksand', sans-serif;
    color: #0f52ba; 
 }
+footer a {
+    text-decoration: none;
+    color: #0f52ba;
+}
+footer a:hover, footer p:hover {
+    color: #0bda51;
+}
 #siteMap {
     display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: auto;
+}
+#siteMap a {
+    text-decoration: none;
+}
+.sitemap-level1 p {
+    margin: .1em;
+}
+.sitemap-level2 {
+    display: flex;
+    flex-direction: row;
 }
 .border-right, .border-left {
     width: 50%;
+    border-top: 2px solid #0f52ba;
 }
 .border-right p, .border-left p {
     font-size: 14px;
+    margin: .3em;
 }
 .border-right {
-    border-right: 2px solid #0f52ba;
+    border-right: 1px solid #0f52ba;
+    text-align: right;
 }
 .border-left {
-    border-left: 2px solid #0f52ba;
+    border-left: 1px solid #0f52ba;
+    text-align: left;
 }
 #privacy {
     padding: .5em;
     font-size: 15px;
+}
+.copyright {
+    color: #0f52ba;
+    font-family: 'Quicksand', sans-serif;
 }
 .header-container {
     position: relative;
@@ -126,4 +162,3 @@ header:hover::after, header:hover::before {
 *::after {
   box-sizing: border-box;
 }
-
