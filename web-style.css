@@ -347,6 +347,9 @@ input::placeholder {
     #pricing {
         margin-top: 13.3em;
     }
+    #pricing .pricing-section {
+        font-size: 14px;
+    }
     #contact {
         margin-top: 15.3em;
         width: 800px;
