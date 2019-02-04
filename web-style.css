@@ -6,19 +6,22 @@ html, body {
 main {
     background: #0f52ba;
     color: white;
-    margin: 0 auto;
 }
 h1 {
     font-family: 'Libre Barcode 128 Text', cursive;
     background: #0f52ba;
     color: white;
     font-weight: lighter;
-    height: 50px;
     font-size: 35px;
+    position: absolute;
+    bottom: 0;
 }
 h2 {
     font-size: 18px;
     margin: 0;
+}
+h1:hover {
+    color: #0bda51; 
 }
 ul {
     list-style-type: none;
@@ -32,7 +35,8 @@ ul {
     flex-direction: column;
 }
 .logo-container {
-    padding: 5px;
+    height: 150px;
+    position: relative;
 }
 /* Site Nav */
 nav {
@@ -95,8 +99,9 @@ footer a:hover {
 }
 /* Content */
 #default, #skills, #portfolio, #business, #pricing, #contact {
-    padding: 1em;
+    padding: 2em;
     margin: auto;
+    font-size: 14px;
 }
 #default {
     margin-top: 10em;
@@ -111,7 +116,7 @@ footer a:hover {
     max-width: 128px;
 }
 #skills {
-    margin-top: 7.8em;
+    margin-top: 10.3em;
 }
 .tech {
     color: #0bda51;
@@ -127,7 +132,7 @@ footer a:hover {
     margin: .4em;
 }
 #portfolio {
-    margin-top: 11em;
+    margin-top: 14.1em;
 }
 #portfolio a {
     text-decoration: none;
@@ -140,7 +145,7 @@ footer a:hover {
     padding: 0;
 }
 #business {
-    margin-top: 13.8em;
+    margin-top: 17em;
 }
 #business ul {
     margin: 0;
@@ -152,9 +157,12 @@ footer a:hover {
 #business i {
     color: #0bda51;
 }
+#business h2 {
+    margin-left: .4em;
+}
 #pricing {
     max-width: 900px;
-    margin-top: 16.6em;
+    margin-top: 20em;
 }
 #pricing-grid {
     display: flex;
@@ -199,7 +207,7 @@ footer a:hover {
 }
 #contact {
     text-align: center;
-    margin-top: 18.7em;
+    margin-top: 22.9em;
 }
 #name {
     background: #0bda51;
@@ -219,7 +227,7 @@ input {
     margin-bottom: .4em;
 }
 input::placeholder {
-  color: #0f52ba;
+    color: #0f52ba;
 }
 .form-input {
     width: 80%;
@@ -235,6 +243,10 @@ input::placeholder {
     font-size: 20px;
     border-radius: 5px;
     border: 2px solid white;
+}
+.button-submit:hover {
+    border: 2px solid #0bda51;
+    background: white;
 }
 .email-url {
     display: none;
@@ -284,18 +296,8 @@ input::placeholder {
     #gears {
         max-width: 180px;
     }
-    #business {
-        margin-top: 14.1em;
-    } 
-    #portfolio {
-        margin-top: 11.5em;
-    }  
-    #pricing {
-        margin-top: 16.6em;
-    }
     #contact {
         text-align: left;
-        margin-top: 19em auto 0;
         width: 350px;
     }
     #message {
@@ -310,7 +312,7 @@ input::placeholder {
     #web-app, #commercial {
         margin: auto 4em;
     }
-    #default, #portfolio, #business, #pricing, #contact {
+    #default, #portfolio {
         padding: 3em;
     }
     #default {
@@ -318,16 +320,9 @@ input::placeholder {
         margin-top: 4em;
     }
     #portfolio {
-        margin-top: 9.2em;
-    }
-    #business {
-        margin-top: 12em;
-    }
-    #pricing {
-        margin-top: 14.8em;
+        margin-top: 13em;
     }
     #contact {
-        margin-top: 17.2em;
         width: 500px;
     }
 }
@@ -340,26 +335,27 @@ input::placeholder {
         font-size: 22px;
     }
     /*Content*/
-    #skills, #portfolio, #business, #pricing {
+    #skills, #portfolio, #business, #pricing, #contact {
         font-size: 20px;
+        margin-left: 4em;
     }
     #skills {
-        margin-top: 7.4em;
+        margin-top: 6.3em;
     }
     #gears {
         max-width: 240px;
     }
     #portfolio {
-        margin-top:8.2em;
+        margin-top:8.3em;
     }
     #business {
-        margin-top: 10.3em;
+        margin-top: 11.3em;
     }
     #pricing {
-        margin-top: 12.5em;
+        margin-top: 13.3em;
     }
     #contact {
-        margin-top: 19em;
+        margin-top: 15.3em;
         width: 800px;
     }
     #message {
